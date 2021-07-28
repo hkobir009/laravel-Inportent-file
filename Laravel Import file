@@ -1,0 +1,13 @@
+
+                 Laravel 8 controller 
+                 
+use App\Http\Controllers\PhotoController;     // import file on route              
+   
+Route::get('/',[visitorcontroller::class,'visitorIndex']);       // this is controller
+   
+   
+                    Laravel 8 Models
+                    
+use App\Models\visitormodel;                // import file on controller    
+   
+   
