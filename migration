@@ -16,7 +16,8 @@ class Visitortable extends Migration
             
     Schema::create('visitor', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('name',100);
+            $table->string('dec',1000);
             $table->string('email')->unique();
             $table->ipAddress('ip_address');
             $table->string('visit_time');
