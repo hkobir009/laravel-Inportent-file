@@ -66,3 +66,34 @@ class servicescontroller extends Controller
 
 
 }
+
+
+
+                         Laravel Advanced tipe Insert
+                         
+
+
+    function insertContactData(Request $req){
+
+        $contact = new ModelName;
+        $contact->contact_name = $req->input('contact_name');
+        $contact->contact_email = $req->input('contact_email');
+        $contact->contact_phone = $req->input('contact_phone');
+        $contact->contact_website = $req->input('contact_website');
+        $contact->contact_massege = $req->input('contact_massege');
+        $result = $contact->save();
+        
+        if ($result==true) {
+           return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+
+   
+
+                         
+
+
+
